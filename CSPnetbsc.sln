@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CuatroValores", "CuatroValo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrecioyCantidad", "PrecioyCantidad\PrecioyCantidad.csproj", "{8475C252-416F-440A-8ACB-D9CD098A99F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumayProducto", "SumayProducto\SumayProducto.csproj", "{6A798F18-FBDE-4BCD-8E7B-906765D7932D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SumayProducto", "SumayProducto\SumayProducto.csproj", "{6A798F18-FBDE-4BCD-8E7B-906765D7932D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramacionCondicional", "ProgramacionCondicional\ProgramacionCondicional.csproj", "{DE305C92-0CE0-41EF-A977-F4A593F7DAC4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
