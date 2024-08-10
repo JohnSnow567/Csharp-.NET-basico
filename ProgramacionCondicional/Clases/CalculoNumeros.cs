@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace ProgramacionCondicional.Clases
 {
-    internal class CalculoNumeros
+    public class CalculoNumeros
     {
         public void CalcularNumeros()
         {
-            int num1 = 0;
-            int num2 = 0;
-            int suma = 0;
-            int resta = 0;
+            decimal num1 = 0;
+            decimal num2 = 0;
+            decimal suma = 0;
+            decimal resta = 0;
             decimal division = 0;
-            int producto = 0;
+            decimal producto = 0;
             string linea = string.Empty;
 
             try
@@ -33,7 +33,7 @@ namespace ProgramacionCondicional.Clases
                 }
 
                 //Verificamos que sea un dato valido
-                if (!int.TryParse(linea, out num1))
+                if (!decimal.TryParse(linea, out num1))
                 {
                     Console.WriteLine("El numero 1 es invalido.");
                     return;
@@ -41,7 +41,7 @@ namespace ProgramacionCondicional.Clases
                 }
                 else
                 {
-                    num1 = Convert.ToInt32(linea);
+                    num1 = Convert.ToDecimal(linea);
                 }
 
                 Console.WriteLine("Ingrese el valor del numero 2: ");
@@ -56,7 +56,7 @@ namespace ProgramacionCondicional.Clases
                 }
 
                 //Verificamos que sea un dato valido
-                if (!int.TryParse(linea, out num2))
+                if (!decimal.TryParse(linea, out num2))
                 {
                     Console.WriteLine("El numero 2 es invalido.");
                     return;
@@ -64,7 +64,7 @@ namespace ProgramacionCondicional.Clases
                 }
                 else
                 {
-                    num2 = Convert.ToInt32(linea);
+                    num2 = Convert.ToDecimal(linea);
                 }
 
                 if (num1 > num2)

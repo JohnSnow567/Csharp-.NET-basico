@@ -1,7 +1,7 @@
 ﻿using ProgramacionCondicional.Clases;
 
-CalculoNivel Nivel = new CalculoNivel();
+CalculoNivel Nums = new CalculoNivel();
 
-Nivel.CalcularNivel();
+Nums.CalcularNivel();
 
 Console.ReadLine();
