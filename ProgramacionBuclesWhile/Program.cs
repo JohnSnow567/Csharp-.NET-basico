@@ -1,7 +1,7 @@
 ﻿using ProgramacionBuclesWhile.Clases;
 
-PiezasHierro pp = new PiezasHierro();
+_10NumerosSumayPromedio pp = new _10NumerosSumayPromedio();
 
-pp.CalcularPiezasHierro();
+pp.Calcular10SumayPromedio();
 
 Console.ReadLine();

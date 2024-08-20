@@ -12,23 +12,28 @@ namespace ProgramacionBuclesWhile.Clases
         {
             try
             {
-                //Creamos una variable para la suma
+                //Creamos las variables
                 int suma = 0;
+                decimal promedio = 0;
+                int i = 0;
+                int numero = 0;
 
                 //Creamos un bucle para preguntar al usuario los numeros a sumar
-                for (int i = 0; i < 10; i++)
+
+                while (i < 10)
                 {
                     Console.Write($"Ingrese el número {i + 1}: ");
-                    int numero = int.Parse(Console.ReadLine());
+                    numero = int.Parse(Console.ReadLine());
                     suma += numero;
+                    i++;
                 }
 
                 //Almacenamos en una variable el promedio de los diez numeros
-                double promedio = (double)suma / 10;
+                promedio = (decimal)suma / 10;
 
                 //Mostramos al usuario en pantalla la suma de los 10 numeros y su promedio
                 Console.WriteLine($"La suma de los 10 números es: {suma}");
-                Console.WriteLine($"El promedio aritmético de los 10 números es: {promedio:F2}");
+                Console.WriteLine($"El promedio aritmético de los 10 números es: {promedio}");
             }
 
             catch (Exception ex) 
