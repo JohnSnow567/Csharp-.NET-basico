@@ -1,7 +1,7 @@
 ﻿using ProgramacionBuclesWhile.Clases;
 
-_10NumerosSumayPromedio pp = new _10NumerosSumayPromedio();
+CalculoSueldoEmpleados pp = new CalculoSueldoEmpleados();
 
-pp.Calcular10SumayPromedio();
+pp.CalcularSueldoEmpleados();
 
 Console.ReadLine();
