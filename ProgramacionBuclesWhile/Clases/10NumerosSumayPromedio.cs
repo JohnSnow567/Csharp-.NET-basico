@@ -23,9 +23,19 @@ namespace ProgramacionBuclesWhile.Clases
                 while (i < 10)
                 {
                     Console.Write($"Ingrese el número {i + 1}: ");
-                    numero = int.Parse(Console.ReadLine());
-                    suma += numero;
-                    i++;
+                    string linea = Console.ReadLine();
+                   
+                    if (int.TryParse(linea, out numero))
+                    {
+                        suma += numero;
+                        i++;
+                    }
+                    else
+                    {
+                        Console.WriteLine("La cantidad es invalida.");
+                        continue;
+                    }
+                    
                 }
 
                 //Almacenamos en una variable el promedio de los diez numeros
