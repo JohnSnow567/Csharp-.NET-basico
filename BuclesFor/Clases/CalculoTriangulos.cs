@@ -13,71 +13,88 @@ namespace BuclesFor.Clases
             try
             {
                 //Definimos las variables a utilizar
-                int numtriangulos;
-                int limitearea;
+                int numtriangulos = 0;
+                int limitearea = 0;
                 int contador = 0;
-                double basetriangulo;
-                double altura;
-                double area;
+                decimal basetriangulo;
+                decimal altura;
+                decimal area;
                 string linea = string.Empty;
 
 
 
-                Console.WriteLine("Ingrese el número de triángulos: ");
-                linea = Console.ReadLine();
-
-                // Verificamos que sea diferente de vacio
-                if (string.IsNullOrEmpty(linea))
+                while (true)
                 {
-                    Console.WriteLine("El numero de triangulos es requerido.");
-                    return;
-
+                    Console.WriteLine("Ingrese el número de triángulos: ");
+                    linea = Console.ReadLine();
+  
+                    if (int.TryParse(linea, out numtriangulos) && numtriangulos > 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cantidad inválida. Asegúrese de ingresar un número entero positivo.");
+                    }
                 }
 
-                //Verificamos que sea un dato valido
-                if (!int.TryParse(linea, out numtriangulos))
+
+
+                while (true)
                 {
-                    Console.WriteLine("El numero de triangulos es invalido.");
-                    return;
+                    Console.Write("Ingrese el valor límite para el área: ");
+                    linea = Console.ReadLine();
 
-                }
-                else
-                {
-                    numtriangulos = Convert.ToInt32(linea);
-                }
-
-                Console.Write("Ingrese el valor límite para el área: ");
-                linea = Console.ReadLine();
-
-                // Verificamos que sea diferente de vacio
-                if (string.IsNullOrEmpty(linea))
-                {
-                    Console.WriteLine("El valor del area es requerido.");
-                    return;
-
+                    if (int.TryParse(linea, out limitearea) && limitearea > 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Cantidad inválida. Asegúrese de ingresar un número entero positivo.");
+                    }
                 }
 
-                //Verificamos que sea un dato valido
-                if (!int.TryParse(linea, out limitearea))
-                {
-                    Console.WriteLine("El valor del area es invalido.");
-                    return;
-
-                }
-                else
-                {
-                    limitearea = Convert.ToInt32(linea);
-                }
 
 
                 //Establecemos nuestro bucle for para hacer varios triangulos
                 for (int i = 0; i < numtriangulos; i++)
                 {
                     Console.WriteLine($"Triángulo {i + 1}:");
-                    Console.Write("Base: ");
-                    basetriangulo = double.Parse(Console.ReadLine());
-                    Console.Write("Altura: ");
-                    altura = double.Parse(Console.ReadLine());
+
+                    // Capturar la base del triángulo
+                    while (true)
+                    {
+                        Console.WriteLine("Ingrese la base: ");
+                        linea = Console.ReadLine();
+
+                        if (decimal.TryParse(linea, out basetriangulo) && basetriangulo > 0)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Base inválida. Asegúrese de ingresar un número positivo.");
+                            continue;
+                        }
+                    }
+
+                    // Capturar la altura del triángulo
+                    while (true)
+                    {
+                        Console.WriteLine("Ingrese la altura: ");
+                        linea = Console.ReadLine();
+
+                        if (decimal.TryParse(linea, out altura) && altura > 0)
+                        {
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Altura inválida. Asegúrese de ingresar un número positivo.");
+                            continue;
+                        }
+                    }
 
                     // Calcular el área del triángulo
                     area = (basetriangulo * altura) / 2;
@@ -86,6 +103,7 @@ namespace BuclesFor.Clases
                     {
                         contador++;
                     }
+
                 }
 
                 Console.WriteLine($"Número de triángulos con área superior al límite: {contador}");

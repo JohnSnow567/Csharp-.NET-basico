@@ -1,8 +1,8 @@
 ﻿using BuclesFor.Clases;
 
-CalculoTriangulosBaseAreaAltura cc = new CalculoTriangulosBaseAreaAltura();
+CalculoUltimos5 cc = new CalculoUltimos5();
 
-cc.CalcularAreaBaseAlturaTriangulos();
+cc.CalcularUltimos5();
 
 Console.ReadLine();
 

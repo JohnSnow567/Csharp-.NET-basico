@@ -13,24 +13,38 @@ namespace BuclesFor.Clases
 
             try
             {
-                //Definimos una variable para almacenar el numero de divisibles
+                //Definimos las variables
                 int contadorDivisibles = 0;
+                int numero = 0;
 
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 10;)
                 {
                     //Pedimos al usuario que ingrese los numeros
                     Console.WriteLine($"Ingrese el número {i + 1}: ");
-                    int numero = int.Parse(Console.ReadLine());
+                    string input = Console.ReadLine();
 
-                    //Si alguno de los numeros ingresados es divisible por 3 o por 5, incrementamos el contador
-                    if (numero % 3 == 0 || numero % 5 == 0)
+                    if (int.TryParse(input, out numero))
                     {
-                        contadorDivisibles++;
+                        //Si alguno de los numeros ingresados es divisible por 3 o por 5, incrementamos el contador
+                        if (numero % 3 == 0 || numero % 5 == 0)
+                        {
+                            contadorDivisibles++;
+                        }
+
+                        i++;
+
                     }
+                    else
+                    {
+                        Console.WriteLine("Cantidad inválida. Asegúrese de ingresar un número entero positivo.");
+                        continue;
+                    }
+
                 }
                 
                 //Mostramos en pantalla
                 Console.WriteLine($"Cantidad de números divisibles por 3 o por 5: {contadorDivisibles}");
+
             }
             catch (Exception ex)
             {
