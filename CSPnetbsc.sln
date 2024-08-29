@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramacionCondicional", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuclesFor", "BuclesFor\BuclesFor.csproj", "{92D326C5-32C7-415F-B6EF-B625CC49B261}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramacionBuclesWhile", "ProgramacionBuclesWhile\ProgramacionBuclesWhile.csproj", "{4740ED4D-0344-4AE9-B38D-221790DF9406}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProgramacionBuclesWhile", "ProgramacionBuclesWhile\ProgramacionBuclesWhile.csproj", "{4740ED4D-0344-4AE9-B38D-221790DF9406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capitulo8Arreglos", "Capitulo8Arreglos\Capitulo8Arreglos.csproj", "{C2AE368A-C593-4BEA-88FA-373A006C2EA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4740ED4D-0344-4AE9-B38D-221790DF9406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4740ED4D-0344-4AE9-B38D-221790DF9406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4740ED4D-0344-4AE9-B38D-221790DF9406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AE368A-C593-4BEA-88FA-373A006C2EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AE368A-C593-4BEA-88FA-373A006C2EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AE368A-C593-4BEA-88FA-373A006C2EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AE368A-C593-4BEA-88FA-373A006C2EA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
