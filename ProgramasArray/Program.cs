@@ -9,7 +9,7 @@ namespace ProgramasArray
         {
             /* Matriz20Elementos.CrearMatriz(); */ // Programa Array 1
             /* MatricesIguales.VerificarIguales(); */ // Programa Array 2
-            MatrizMenoryRepetido.CalculoMatriz();
+            MatrizMenoryRepetido.CalculoMatriz(); // Programa Array 3
         }
     }
 }
